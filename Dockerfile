@@ -17,7 +17,7 @@ ADD supervisord.conf /etc/supervisord.conf
 RUN rm -rf /root/xmrig-proxy-2.6.5/config.json
 ADD config.json /root/xmrig-proxy-2.6.5/config.json
 
-EXPOSE 33333
+EXPOSE 3333
 CMD ["/usr/bin/supervisord","-c","/etc/supervisord.conf"]
     
 
